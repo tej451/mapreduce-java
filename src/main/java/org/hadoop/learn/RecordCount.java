@@ -23,7 +23,7 @@ public class RecordCount extends Configured implements Tool {
 	extends Mapper<LongWritable, Text, Text, LongWritable> {
 		public void map(LongWritable lineOffset, Text record, Context output) 
 		throws IOException, InterruptedException {
-			output.write(new Text("a"), new LongWritable(1));
+			output.write(new Text("It"), new LongWritable(1));
 		}
 
 	}
